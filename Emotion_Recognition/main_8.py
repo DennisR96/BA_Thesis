@@ -7,7 +7,7 @@ import torch.utils.data as data
 import os
 import argparse
 from sklearn.metrics import f1_score, confusion_matrix
-from data_preprocessing.sam import SAM
+from Emotion_Recognition.data_preprocessing.sam import SAM
 import torch.nn.parallel
 import torch.backends.cudnn as cudnn
 import torch.optim
@@ -19,7 +19,7 @@ import torchvision.transforms as transforms
 import numpy as np
 import datetime
 
-from models.PosterV2_8cls import *
+from Emotion_Recognition.models.PosterV2_8cls import *
 
 warnings.filterwarnings("ignore", category=UserWarning)
 
